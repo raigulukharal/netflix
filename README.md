@@ -36,17 +36,16 @@ This is a full-stack Netflix Clone web application built using the MERN stack (M
 - JWT (for authentication)
 
 ---
-
 ## 🖼️ Screenshots
 
 ### 🔐 Signup Page  
-![Signup Page](https://raw.githubusercontent.com/raigulukharal/netflix/main/public/assets/signup.png)
+![Signup](https://raw.githubusercontent.com/raigulukharal/netflix/main/screenshots/signup.png)
 
 ### 🔑 Login Page  
-![Login Page](https://raw.githubusercontent.com/raigulukharal/netflix/main/public/assets/login.png)
+![Login](https://raw.githubusercontent.com/raigulukharal/netflix/main/screenshots/login.png)
 
-### 🎬 Homepage  
-![Home Page](https://raw.githubusercontent.com/raigulukharal/netflix/main/public/assets/home.png)
+### 🎬 Home Page  
+![Home](https://raw.githubusercontent.com/raigulukharal/netflix/main/screenshots/home.png)
 
-### 👁️ View / Detail Page  
-![View Page](https://raw.githubusercontent.com/raigulukharal/netflix/main/public/assets/view.png)
+### 👁️ View Page  
+![View](https://raw.githubusercontent.com/raigulukharal/netflix/main/screenshots/view.png)
