@@ -49,3 +49,8 @@ This is a full-stack Netflix Clone web application built using the MERN stack (M
 
 ### 👁️ View Page  
 ![View](https://raw.githubusercontent.com/raigulukharal/netflix/main/screenshots/view.png)
+
+### 👁️ Search Page  
+![View](https://raw.githubusercontent.com/raigulukharal/netflix/main/screenshots/search.png)
+
+
