@@ -52,27 +52,33 @@ export const Logout = async (req, res) => {
 
 export const Register = async (req, res) => {  
     try {
-        const {name ,email,password}=req.body
-        if(!name || !email || !password){
-            return res.status(400).json({message:"Please fill all the fields"})
-        }
-        const userExists = await User.findOne({email})
-        if(userExists){
-            return res.status(400).json({message:"User already exists"})
+        const { name, email, password } = req.body;
+
+        if (!name || !email || !password) {
+            return res.status(400).json({ message: "Please fill all the fields" });
         }
 
-        const hashPassword = await bcrypt.hash(password, 10)
-            const user = await User.create({
-                name,
-                email,
-                password:hashPassword
-            })
-            return res.status(201).json({
-                message: "User registered successfully",
-                success: true,
-            })
+        const userExists = await User.findOne({ email });
+        if (userExists) {
+            return res.status(400).json({ message: "User already exists" });
         }
-    catch (error) {
-            console.log(error)
-        }
+
+        const hashPassword = await bcrypt.hash(password, 10);
+
+        await User.create({
+            name,
+            email,
+            password: hashPassword
+        });
+
+        // 🚀 Sirf success message bhejenge, user data nahi
+        return res.status(201).json({
+            message: "User registered successfully. Please login to continue.",
+            success: true,
+        });
+
+    } catch (error) {
+        console.log(error);
+        return res.status(500).json({ message: "Server error", error });
     }
+}

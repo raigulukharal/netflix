@@ -15,4 +15,3 @@ export const TvList="https://api.themoviedb.org/3/genre/tv/list"
 export const SearchMoviesUrl='https://api.themoviedb.org/3/search/movie?query=';
 
 export const Poster_URL="https://image.tmdb.org/t/p/w500";
-// funnymovies&include_adult=false&language=en-US&page=1
